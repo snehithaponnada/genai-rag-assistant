@@ -21,6 +21,8 @@ uploaded_file = st.file_uploader(
 if uploaded_file:
 
     # SAVE PDF
+    os.makedirs("uploaded_docs", exist_ok=True)
+
     file_path = os.path.join(
         "uploaded_docs",
         uploaded_file.name
