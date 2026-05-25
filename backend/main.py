@@ -53,12 +53,13 @@ if uploaded_file:
     # ONLY RUN IF QUESTION EXISTS
     if question:
 
-        response = qa_chain.run(question)
+        # response = qa_chain.run(question)
 
         docs = vectorstore.similarity_search(
             question,
             k=2
         )
+        response = docs[0].page_content
 
         st.write("### Retrieved Chunks")
 
