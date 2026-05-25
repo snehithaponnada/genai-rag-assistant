@@ -1,9 +1,12 @@
 streamlit
 langchain
-langchain-openai
 langchain-community
+langchain-core
+transformers
+sentence-transformers
 chromadb
 pypdf
+torch
+accelerate
 python-dotenv
-tiktoken
-openai
+onnxruntime
